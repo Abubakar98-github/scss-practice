@@ -1,0 +1,457 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/font/Poppins-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Header section styles start*/
+.header {
+  width: 100%;
+  height: 100vh;
+}
+
+.left-side {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-image: url("/images/home-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.left-side .logo {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+.left-side .logo h1 {
+  color: #232b2b;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 0 #fff;
+}
+
+.right-side {
+  float: right;
+  width: 50%;
+  height: 100%;
+  background-color: #F1E2D7;
+}
+
+/*Header section styles end*/
+/*Home section styles start*/
+.home {
+  padding: 3rem;
+  padding-top: 4rem;
+}
+.home-top_text {
+  color: #999999;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.home-title {
+  padding: 1rem 0;
+  font-weight: 100;
+  font-size: 2rem;
+  color: #333333;
+  letter-spacing: 1px;
+}
+.home-title span {
+  color: #232b2b;
+}
+.home-text {
+  padding-bottom: 3rem;
+  color: #888888;
+}
+.home-btn {
+  padding: 0.8rem 2rem;
+  border: 3px solid #232b2b;
+  border-radius: 3rem;
+  background-color: transparent;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.home-btn a {
+  color: #232b2b;
+}
+.home-btn:hover {
+  background-color: #E3AE57;
+  border-color: #E3AE57;
+}
+.home-btn:hover a {
+  color: #fff;
+}
+
+/*Home section styles end*/
+/*Navbar styles start*/
+.nav {
+  min-height: 10vh;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-list-item {
+  margin-right: 1rem;
+  color: #666666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in-out;
+}
+.nav-list-item:hover {
+  color: #E3AE57;
+}
+.nav-list-item.active {
+  color: #E3AE57;
+}
+
+/*Navbar styles end*/
+/*About section styles start*/
+.about .first-line {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.about .main-text {
+  padding: 1rem;
+}
+.about .main-text .title {
+  padding: 1rem;
+  font-weight: lighter;
+  font-size: 2.5rem;
+  color: #333333;
+}
+.about .main-text .secondary-text {
+  padding: 1rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
+  color: #E3AE57;
+}
+.about .main-text .text {
+  padding: 1rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  color: #888888;
+}
+.about .main-img {
+  height: 100%;
+}
+.about .secondary-main-text {
+  height: 100%;
+  padding: 1rem 1.5rem;
+  background-color: #E3AE57;
+}
+.about .secondary-main-text .title {
+  color: #fff;
+  padding: 1rem 0;
+  font-weight: lighter;
+  font-size: 2.2rem;
+}
+.about .secondary-main-text .text {
+  padding: 0;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.about .secondary-main-text .d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about .secondary-main-text .percent-item {
+  padding: 0.5rem 0;
+}
+.about .secondary-main-text .label {
+  color: #232b2b;
+  padding-bottom: 0.2rem;
+}
+.about .secondary-main-text .line {
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+}
+.about .secondary-main-text .full-90 {
+  width: 90%;
+  height: 100%;
+  background-color: #232b2b;
+}
+.about .secondary-main-text .full-70 {
+  width: 70%;
+  height: 100%;
+  background-color: #232b2b;
+}
+.about .secondary-main-text .full-80 {
+  width: 80%;
+  height: 100%;
+  background-color: #232b2b;
+}
+.about .secondary-main-text .percent {
+  color: #fff;
+}
+.about .second-line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.about .second-line .item {
+  padding: 4rem 2rem;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+}
+.about .second-line .item i {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.about .second-line .item .title {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.about .second-line .item .text {
+  font-size: 0.9rem;
+}
+.about .second-line .green {
+  background-color: #E3AE57;
+}
+.about .second-line .red {
+  background-color: #E9724C;
+}
+.about .second-line .black {
+  background-color: #161616;
+}
+.about .second-line .white {
+  background-color: #fff;
+}
+.about .second-line .white i {
+  color: #000;
+}
+.about .second-line .white .title {
+  color: #232b2b;
+}
+.about .second-line .white .text {
+  color: #888888;
+}
+
+/*About section styles end*/
+/*Experience section styles start*/
+.content .content-item {
+  display: flex;
+  color: #fff;
+}
+.content .content-item .main-img {
+  width: 50%;
+}
+.content .content-item .main-text {
+  width: 50%;
+}
+.content .green {
+  background-color: #E3AE57;
+  padding-left: 2.4rem;
+}
+.content .red {
+  background-color: #E9724C;
+}
+.content .black {
+  background-color: #161616;
+}
+
+.main-text {
+  padding: 3rem;
+}
+.main-text .title {
+  font-weight: lighter;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.main-text .secondary-text {
+  padding-bottom: 1rem;
+}
+
+.experience .item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.experience .item .d-flex {
+  display: flex;
+  align-items: center;
+}
+.experience .item-icon {
+  padding-right: 1rem;
+  font-size: 2rem;
+}
+.experience .item-title {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  padding-right: 1rem;
+}
+.experience .item-text {
+  font-size: 0.9rem;
+}
+.experience .item-secondary-text {
+  color: #232b2b;
+}
+
+/*Experience section styles end*/
+/*Testimonials section styles start*/
+.testimonials {
+  background-image: url("/images/quotes-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.testimonials::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.testimonials .main-content {
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+.testimonials .icon {
+  color: #fff;
+  font-size: 3rem;
+}
+.testimonials .title {
+  font-weight: lighter;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.testimonials .text {
+  color: #888888;
+  font-size: 0.9rem;
+}
+
+/*Testimonials section styles end*/
+/*Contact section styles start*/
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.contact .form {
+  color: #fff;
+  background-color: #E9724C;
+  padding: 1rem 2rem;
+}
+.contact .form-title {
+  padding: 1rem;
+  padding-bottom: 0;
+  font-weight: lighter;
+  font-size: 2.5rem;
+}
+.contact .form-secondary-text {
+  padding: 1rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+.contact .form-control, .contact .form-textarea {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-bottom: 1px solid #E3AE57;
+  background-color: transparent;
+  font-family: inherit;
+  transition: border 0.4s ease-out;
+}
+.contact .form-control:focus, .contact .form-textarea:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+.contact .form-control::-moz-placeholder, .contact .form-textarea::-moz-placeholder {
+  color: #fff;
+}
+.contact .form-control:-ms-input-placeholder, .contact .form-textarea:-ms-input-placeholder {
+  color: #fff;
+}
+.contact .form-control::placeholder, .contact .form-textarea::placeholder {
+  color: #fff;
+}
+.contact .form-btn {
+  border: none;
+  padding: 0.7rem 2rem;
+  width: 200px;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.contact .form-btn a {
+  color: #000;
+}
+.contact .form-btn:hover {
+  background-color: transparent;
+}
+.contact .form-btn:hover a {
+  color: #fff;
+}
+.contact .secondary-main-text {
+  background-color: #161616;
+  padding: 2rem;
+}
+.contact .secondary-main-text .title {
+  padding: 1rem 0;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.contact .secondary-main-text .text {
+  color: #888888;
+  font-size: 0.9rem;
+}
+.contact .link {
+  padding: 0.5rem 0;
+  color: #888888;
+  font-size: 0.9rem;
+}
+.contact .link i {
+  margin-right: 0.2rem;
+}
+.contact .link a {
+  color: #E3AE57;
+}
+
+/*Contact section styles end*//*# sourceMappingURL=style.css.map */
